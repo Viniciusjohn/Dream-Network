@@ -1,59 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dream Network</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dream Network - A Rede Social dos Sonhos</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" type="image/png" href="logo.png">
 </head>
-<body class="bg-gradient-to-b from-purple-900 via-indigo-900 to-black text-white font-sans">
+<body class="bg-gradient-to-b from-indigo-900 via-purple-900 to-black text-white font-sans">
 
-  <!-- Header / Navbar -->
-  <header class="p-6 flex justify-between items-center">
-    <div class="flex items-center space-x-3">
-      <img src="logo.png" alt="Dream Network Logo" class="h-10 w-10 rounded-full shadow-lg">
-      <span class="text-2xl font-bold text-white">Dream Network</span>
-    </div>
-    <nav class="space-x-6">
-      <a href="#" class="hover:text-purple-200">Início</a>
-      <a href="#" class="hover:text-purple-200">Explorar</a>
-      <a href="#" class="hover:text-purple-200">Comunidade</a>
+  <!-- Header -->
+  <header class="flex justify-between items-center px-6 py-4 bg-black/30 backdrop-blur-md fixed w-full z-10">
+    <h1 class="text-2xl font-bold tracking-wide">🌙 Dream Network</h1>
+    <nav class="hidden md:flex gap-6 text-lg">
+      <a href="#sobre" class="hover:text-purple-400 transition">Sobre</a>
+      <a href="#features" class="hover:text-purple-400 transition">Funcionalidades</a>
+      <a href="#cta" class="hover:text-purple-400 transition">Inscreva-se</a>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="flex flex-col items-center text-center py-20 px-6">
-    <h1 class="text-5xl font-extrabold mb-6">Bem-vindo ao <span class="text-purple-400">Dream Network</span></h1>
-    <p class="text-lg max-w-2xl text-gray-300 mb-8">
-      Uma rede social única para compartilhar, explorar e interpretar sonhos.
-      Conecte-se com pessoas através do mundo onírico.
+  <!-- Hero -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+    <h2 class="text-5xl md:text-6xl font-extrabold mb-6 animate-pulse">
+      Conecte-se através dos seus sonhos
+    </h2>
+    <p class="text-lg md:text-xl text-gray-300 max-w-2xl mb-8">
+      O <strong>Dream Network</strong> é a primeira rede social dedicada a compartilhar, explorar e interpretar sonhos. 
+      Transforme sua imaginação em conexões reais.
     </p>
-    <a href="#explorar" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-xl shadow-lg transition">
-      Começar Agora
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeyHPjxe7-7P8iIeFPuQyAErnzapXd1EwV3lvdWpX2CyS9fcQ/viewform?usp=sharing&ouid=118196694877507130201" target="_blank"
+       class="bg-purple-600 hover:bg-purple-700 px-8 py-4 rounded-full text-xl font-semibold shadow-lg shadow-purple-500/50 transition">
+      ✨ Entrar na lista de espera
     </a>
   </section>
 
-  <!-- Features -->
-  <section id="explorar" class="grid md:grid-cols-3 gap-8 px-10 py-16">
-    <div class="bg-white/10 rounded-2xl p-6 shadow-lg">
-      <h3 class="text-xl font-semibold mb-2">📓 Registro de Sonhos</h3>
-      <p class="text-gray-300">Guarde seus sonhos em um diário digital visual e personalizado.</p>
-    </div>
-    <div class="bg-white/10 rounded-2xl p-6 shadow-lg">
-      <h3 class="text-xl font-semibold mb-2">🌌 Comunidade</h3>
-      <p class="text-gray-300">Explore sonhos de outros usuários e descubra conexões incríveis.</p>
-    </div>
-    <div class="bg-white/10 rounded-2xl p-6 shadow-lg">
-      <h3 class="text-xl font-semibold mb-2">⭐ Interpretação</h3>
-      <p class="text-gray-300">Participe de discussões e interprete sonhos junto da comunidade.</p>
+  <!-- Sobre -->
+  <section id="sobre" class="py-20 px-6 bg-black/50 backdrop-blur-md text-center">
+    <h3 class="text-3xl font-bold mb-6">Sobre o Projeto</h3>
+    <p class="max-w-3xl mx-auto text-gray-300 text-lg leading-relaxed">
+      Criamos um espaço único onde você pode registrar seus sonhos, descobrir significados e interagir com uma 
+      comunidade fascinada pelo mundo onírico. Nossa missão é transformar experiências pessoais em uma 
+      jornada coletiva de autodescoberta e criatividade.
+    </p>
+  </section>
+
+  <!-- Funcionalidades -->
+  <section id="features" class="py-20 px-6">
+    <h3 class="text-3xl font-bold text-center mb-12">Funcionalidades</h3>
+    <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <div class="bg-purple-900/30 p-8 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h4 class="text-xl font-semibold mb-3">📖 Diário de Sonhos</h4>
+        <p class="text-gray-300">Registre e organize seus sonhos em um espaço só seu, com categorias e filtros personalizados.</p>
+      </div>
+      <div class="bg-purple-900/30 p-8 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h4 class="text-xl font-semibold mb-3">🌌 Interpretação Coletiva</h4>
+        <p class="text-gray-300">Conecte-se com outras pessoas para interpretar símbolos e criar significados juntos.</p>
+      </div>
+      <div class="bg-purple-900/30 p-8 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h4 class="text-xl font-semibold mb-3">🏆 Gamificação</h4>
+        <p class="text-gray-300">Ganhe pontos e conquistas enquanto compartilha sonhos e participa de desafios temáticos.</p>
+      </div>
     </div>
   </section>
 
+  <!-- Call to Action -->
+  <section id="cta" class="py-20 text-center bg-gradient-to-r from-purple-800 via-indigo-900 to-black">
+    <h3 class="text-4xl font-bold mb-6">Seja um dos primeiros sonhadores 🌙</h3>
+    <p class="text-lg text-gray-300 mb-8">Inscreva-se na lista de espera e participe da construção do Dream Network.</p>
+    <a href="https://forms.gle/SEU-LINK-AQUI" target="_blank"
+       class="bg-purple-600 hover:bg-purple-700 px-10 py-4 rounded-full text-xl font-semibold shadow-lg shadow-purple-500/50 transition">
+      Quero Participar
+    </a>
+  </section>
+
   <!-- Footer -->
-  <footer class="text-center py-8 text-gray-400 text-sm">
-    © 2025 Dream Network — Transformando sonhos em conexões reais.
+  <footer class="py-6 text-center text-gray-400 bg-black/50">
+    © 2025 Dream Network. Todos os direitos reservados.
   </footer>
 
 </body>
-                                                                                                              </html>
+      </html>
